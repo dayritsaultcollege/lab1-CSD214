@@ -28,9 +28,8 @@ public class App {
         this.SIN = SIN;
         this.COUNT = COUNT;
 
-
-
     }
+
 
 
 
