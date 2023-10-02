@@ -2,7 +2,7 @@ package lab1.q2; // Place the Car class in the appropriate package
 
 /**
  Author : Andrei Dayrit
- Date : 09/27/2023
+ Date : 09/30/2023
  Description : this class represents a Car object with attributes make, model, year, owner, and VIN.
  **/
 
@@ -11,7 +11,7 @@ import lab1.q1.Person; // Import the Person class from q1
 import java.util.Objects;
 
 public class Car {
-    // Attributes
+    // Attributes of Car class
     private String make;
     private String model;
     private int year;
@@ -19,7 +19,7 @@ public class Car {
     private int VIN;
     private static int COUNT = 0;
 
-    // Constructors
+    // Constructors for Car class
     public Car(String make, String model, int year) {
         this(make, model, year, null);
     }
@@ -69,7 +69,7 @@ public class Car {
         return VIN;
     }
 
-    // toString Method
+    // toString Method for printing Car objects directly
     @Override
     public String toString() {
         return "Car {" +
@@ -81,7 +81,7 @@ public class Car {
                 '}';
     }
 
-    // Equals and HashCode Methods
+    // Equals and HashCode Methods for comparing Car objects
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -103,7 +103,7 @@ public class Car {
         return Objects.hash(make, model, year, owner, VIN);
     }
 
-    // Static method to get COUNT
+    // Static method to get COUNT variable
     public static int getCount() {
         return COUNT;
     }

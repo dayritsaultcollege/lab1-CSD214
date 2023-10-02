@@ -3,7 +3,7 @@ package lab1.q1;
 /**
  Author : Andrei Dayrit
  Date : 09/27/2023
- Description : Th
+ Description : This program runs the Person class and creates 3 Person objects and prints them out
  **/
 
 import java.util.Objects;
@@ -32,7 +32,7 @@ public class Person {
     }
 
 
-    // Getters and Setters for attributes
+    // Getters and Setters for attributes (public)
     public String getFirstname() {
         return firstname;
     }
@@ -65,13 +65,13 @@ public class Person {
         this.SIN = SIN;
     }
 
-    // toString Method
+    // toString Method for printing Person objects directly
     @Override
     public String toString() {
         return "{ " + firstname + " " + lastname + ", Gender: " + gender + ", SIN=" + SIN + " }";
     }
 
-    // Equals and HashCode Methods
+    // Equals and HashCode Methods for comparing Person objects
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -92,7 +92,7 @@ public class Person {
         return Objects.hash(firstname, lastname, gender, SIN);
     }
 
-    // Static method to get COUNT
+    // Static method to get COUNT variable
     public static int getCount() {
         return COUNT;
     }
