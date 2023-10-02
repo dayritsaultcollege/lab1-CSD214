@@ -20,7 +20,7 @@ public class Car {
     private static int COUNT = 0;
 
     // Constructors for Car class
-    public Car(String make, String model, int year) {
+    public Car(String make, String model, int i, int year, Person owner) {
         this(make, model, year, null);
     }
 
