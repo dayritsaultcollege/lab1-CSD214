@@ -1,19 +1,24 @@
 package lab1.q1;
 
+/**
+ Author : Andrei Dayrit
+ Date : 09/27/2023
+ Description : Th
+ **/
+
 import java.util.Objects;
 
 public class Person {
     // Enum for representing gender of Person
     public enum Gender {
         MALE,
-        FEMALE,
-        OTHER
+        FEMALE
     }
 
     // Attributes of Person class (private)
     private String firstname;
     private String lastname;
-    private Gender gender; // Use enum for gender
+    private Gender gender;
     private int SIN;
     private static int COUNT = 0; // Class variable
 
