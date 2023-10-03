@@ -26,6 +26,7 @@ public class App {
         app.run();
     }
 
+    // This method runs the application with a menu for the user to interact with
     public void run() {
         String menu = ""
                 + "----------------\n"
@@ -39,11 +40,13 @@ public class App {
                 + "99. Exit\n";
 
         int decision;
+        // Do-while loop to keep the application running until the user decides to exit
         do {
             System.out.println(menu);
+            //input for the user to decide what to do
             System.out.print("Enter your decision: ");
             decision = input.nextInt();
-            input.nextLine(); // Consume newline
+            input.nextLine();
 
             switch (decision) {
                 case 1:
@@ -79,7 +82,7 @@ public class App {
                     System.out.print("Enter the index of the car to edit: ");
                     int editIndex = input.nextInt();
 
-                    //checking if the index is valid
+                    //checking if the index is valid, using a if statement
                     if (editIndex >= 0 && editIndex < unsoldCurrentIndex) {
 
                         Car carToEdit = unsoldCars[editIndex];
