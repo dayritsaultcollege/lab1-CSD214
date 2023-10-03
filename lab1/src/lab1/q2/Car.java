@@ -3,15 +3,16 @@ package lab1.q2; // Place the Car class in the appropriate package
 /**
  Author : Andrei Dayrit
  Date : 09/30/2023
- Description : this class represents a Car object with attributes make, model, year, owner, and VIN.
+ Description : this class represents a Car object with attributes make, model, year, owner, and VIN
+                and methods to get and set those attributes.
  **/
 
-import lab1.q1.Person; // Import the Person class from q1
+import lab1.q1.Person;
 
 import java.util.Objects;
 
 public class Car {
-    // Attributes of Car class
+
     private String make;
     private String model;
     private int year;
@@ -29,10 +30,15 @@ public class Car {
         this.model = model;
         this.year = year;
         this.owner = owner;
-        this.VIN = ++COUNT; // Increment VIN for each new car
+        this.VIN = ++COUNT;
     }
 
-    // Getters and Setters
+
+
+    public Car(String make, String model, int year, int vin) {
+    }
+
+    // Getters and Setters for attributes
     public String getMake() {
         return make;
     }
@@ -65,9 +71,9 @@ public class Car {
         this.owner = owner;
     }
 
-    public int getVIN() {
-        return VIN;
-    }
+
+
+
 
     // toString Method for printing Car objects directly
     @Override
@@ -80,6 +86,8 @@ public class Car {
                 ", VIN: " + VIN +
                 '}';
     }
+
+
 
     // Equals and HashCode Methods for comparing Car objects
     @Override
@@ -97,6 +105,9 @@ public class Car {
                 Objects.equals(model, car.model) &&
                 Objects.equals(owner, car.owner);
     }
+
+
+
 
     @Override
     public int hashCode() {

@@ -4,6 +4,7 @@ package lab1.q2;
  Author : Andrei Dayrit
  Date : 09/30/2023
  Description : this program test both the Person and Car classes
+                by creating 3 Person objects and 3 Car objects and prints them out.
  **/
 
 import lab1.q1.Person;
@@ -14,7 +15,7 @@ public class UnitTest {
 
     @Test
     public void testPersonEquals() {
-        // Test cases for the Person class here
+        // Test cases for the Person class here and in the following
         Person p1 = new Person("First", "Last", Person.Gender.MALE, 1234);
         Person p2 = new Person("First", "Last", Person.Gender.MALE, 1234);
         Person p3 = new Person("First", "Last", Person.Gender.MALE, 12345);
@@ -26,7 +27,7 @@ public class UnitTest {
 
     @Test
     public void testCarEquals() {
-        // Test cases for the Car class here
+        // Test cases for the Car class here and in the following
         Person owner = new Person("Owner", "Last", Person.Gender.MALE, 1234);
 
         Car c1 = new Car("Chevrolet", "Camaro", 2012, 1234, owner);

@@ -3,7 +3,7 @@ package lab1.q1;
 /**
  Author : Andrei Dayrit
  Date : 09/27/2023
- Description : This program runs the Person class and creates 3 Person objects and prints them out
+ Description : This program runs the Person class and creates 3 Person objects and prints them out.
  **/
 
 import java.util.Objects;
@@ -47,22 +47,6 @@ public class Person {
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
-    }
-
-    public Gender getGender() {
-        return gender;
-    }
-
-    public void setGender(Gender gender) {
-        this.gender = gender;
-    }
-
-    public int getSIN() {
-        return SIN;
-    }
-
-    public void setSIN(int SIN) {
-        this.SIN = SIN;
     }
 
     // toString Method for printing Person objects directly
