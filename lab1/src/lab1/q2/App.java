@@ -29,7 +29,7 @@ public class App {
     // This method runs the application with a menu for the user to interact with
     public void run() {
         String menu = ""
-                + "----------------\n"
+                + "----------------------\n"
                 + " 1. Add a Car\n"
                 + " 2. Edit a Car\n"
                 + " 3. Delete an unsold Car\n"
@@ -37,7 +37,8 @@ public class App {
                 + " 5. List unsold Cars\n"
                 + " 6. List sold Cars\n"
                 + " 7. Sell a Car\n"
-                + "99. Exit\n";
+                + "99. Exit\n"
+                + "----------------------\n";
 
         int decision;
         // Do-while loop to keep the application running until the user decides to exit
@@ -72,7 +73,7 @@ public class App {
                     unsoldCars[unsoldCurrentIndex] = newCar;
                     unsoldCurrentIndex++;
 
-                    System.out.println("Car added successfully.");
+                    System.out.println("A new Car has added successfully.");
                     break;
 
                 case 2:
@@ -136,12 +137,10 @@ public class App {
 
 
                     if (deleteSoldIndex >= 0 && deleteSoldIndex < soldCurrentIndex) {
-                        // Shift the sold cars to the left to fill the gap
+
                         for (int i = deleteSoldIndex; i < soldCurrentIndex - 1; i++) {
                             soldCars[i] = soldCars[i + 1];
                         }
-
-
 
 
                         // Set the last element to null

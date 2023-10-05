@@ -28,7 +28,7 @@ public class Person {
         this.lastname = lastname;
         this.gender = gender;
         this.SIN = SIN;
-        COUNT++; // Increment COUNT when a Person is created
+        COUNT++; // Increase COUNT when a Person is created
     }
 
 

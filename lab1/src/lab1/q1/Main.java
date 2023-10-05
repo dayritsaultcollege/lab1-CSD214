@@ -24,7 +24,7 @@ public class Main {
         System.out.println(p3);
 
 
-        // Test the COUNT variable
+        // Prints the COUNT of each variable
         System.out.println("COUNT: " + Person.getCount());
     }
 }
